@@ -21,9 +21,11 @@ and if your code is not in a same drive as rust installation, you'll get some pa
 build obj/src/opts/avx.SkOpts_avx.obj: cxx ../../../../../../../../../C:...
 ```
 
-you have move the source directory to the same drive as your rust installation, or vice versa.
+you have to move the source directory to the same drive as your rust installation, or vice versa.
 
 I found a way to enable long path support as followed
+
+`git config --global core.longpaths true`
 
 `regedit`
 `HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\FileSystem\LongPathsEnabled`
