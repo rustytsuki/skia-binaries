@@ -42,11 +42,12 @@ but, this is un ugly solution.
 1. you have to install what the building need in https://github.com/rust-skia/rust-skia
 2. use administrator mode in the terminal
 3. checkout https://github.com/rust-skia/rust-skia and switch to the tag you want to build
-4. `cd rust-skia/skia-bindings`
-5. `cargo +nightly-x86_64-pc-windows-msvc build --release --features=gl --target=i686-pc-windows-msvc`
-6. copy rust-skia\skia-bindings\src\bindings.rs
-7. cd rust-skia\target\i686-pc-windows-msvc\release\build\skia-bindings-074fe6697fee20a3\out\skia
-8. package bindings.rs, skia-bindings.lib, skia.lib to a tar.gz file. 
-9. `tar -czvf xxx.tar.gz skia-binaries`
-10. done!
+4. remove rust-skia\skia-bindings\src\bindings.rs if the file existed before every time you build
+5. `cd rust-skia/skia-bindings`
+6. `cargo +nightly-x86_64-pc-windows-msvc build --release --features=gl --target=i686-pc-windows-msvc`
+7. copy rust-skia\skia-bindings\src\bindings.rs
+8. cd rust-skia\target\i686-pc-windows-msvc\release\build\skia-bindings-074fe6697fee20a3\out\skia
+9. package bindings.rs, skia-bindings.lib, skia.lib to a tar.gz file. 
+10. `tar -czvf xxx.tar.gz skia-binaries`
+11. done!
 
