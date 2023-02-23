@@ -49,7 +49,7 @@ but, this is an ugly solution.
 6. `cargo +nightly-x86_64-pc-windows-msvc build --release --features=gl --target=i686-pc-windows-msvc`
 7. copy rust-skia\skia-bindings\src\bindings.rs
 8. cd rust-skia\target\i686-pc-windows-msvc\release\build\skia-bindings-074fe6697fee20a3\out\skia
-9. put bindings.rs, skia-bindings.lib, skia.lib to a folder called skia-binaries
+9. put bindings.rs, skia-bindings.lib, skia.lib and other needed by features to a folder called skia-binaries
 10. `tar -czvf xxx.tar.gz skia-binaries`
 11. done!
 
